@@ -1,18 +1,28 @@
-﻿<h3>About Me</h3>
+﻿@page "/about"
 
+<h1>About Me</h1>
 
-
-@code 
+@foreach(var link in Link.All)
 {
-    class Contact
+    <MatButton Link="@link.Url" Icon="@link.Icon"></MatButton>
+}
+
+@code
+{
+    class Link
     {
-        Contact(string url, string cssClass)
+        public static readonly IEnumerable<Link> All = new List<Link>
+        {
+            new Link("mailto:tayco2702@gmail.com", "favorite")
+        };
+
+        private Link(string url, string icon)
         {
             Url = url;
-            CssClass = cssClass;
+            Icon = icon;
         }
 
-        string Url { get; }
-        string CssClass { get; }
+        public string Url { get; }
+        public string Icon { get; }
     }
 }
