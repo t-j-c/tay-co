@@ -1,7 +1,30 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<MatThemeProvider Theme="@Warning">
+    <div>
+        <MatButton Icon="@MatIconNames.Warning" Outlined="true">Construction Zone</MatButton>
+    </div>
+</MatThemeProvider>
 
-Welcome to your new app.
+<br />
+<p>
+    Check back soon for some articles here.
+</p>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<p>
+    In the meantime, <NavLink href="about">connect with me</NavLink>!
+</p>
+
+@code
+{
+    MatTheme Warning = new MatTheme()
+    {
+        Primary = MatThemeColors.Orange._500.Value,
+        OnPrimary = MatThemeColors.Amber._500.Value,
+        Secondary = MatThemeColors.BlueGrey._500.Value,
+        OnSecondary = MatThemeColors.Blue._500.Value,
+        Background = MatThemeColors.Grey._500.Value,
+        Surface = MatThemeColors.Yellow._500.Value,
+        OnSurface = MatThemeColors.Red._500.Value
+    };
+}
