@@ -7,9 +7,11 @@
 @foreach (var link in Link.All)
 {
     <div>
-        <MatButton Link="@link.Url">
-            <i class="fa fa-@link.Icon"></i> &nbsp; @link.Name
-        </MatButton>
+        <a href="@link.Url" target="_blank">
+            <MatButton>
+                <i class="fa fa-@link.Icon"></i> &nbsp; @link.Name
+            </MatButton>
+        </a>
     </div>
 }
 
