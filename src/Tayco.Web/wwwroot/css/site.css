@@ -97,6 +97,15 @@ app {
                 color: white;
             }
 
+.social-footer {
+    display: grid;
+}
+
+    .social-footer > a {
+        text-align: center;
+        grid-row: 1;
+    }
+
 .content {
     padding-top: 1.1rem;
 }
@@ -179,5 +188,11 @@ app {
     .sidebar .collapse {
         /* Never collapse the sidebar for wide screens */
         display: block;
+    }
+
+    .sidebar .social-footer {
+        bottom: 0;
+        position: absolute;
+        display: grid !important;
     }
 }

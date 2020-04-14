@@ -18,45 +18,9 @@
 <MatH4>Hobbies</MatH4>
 <MatBody1>
     <ul>
-        <li>Being outdoors (e.g. hiking and camping)</li>
+        <li>Being outdoors - mainly hiking and camping in the Adirondack Mountains</li>
         <li>Playing guitar</li>
         <li>Skateboarding</li>
-        <li>Helping people on StackOverflow :)</li>
+        <li>Reading - favorite authors include Kurt Vonnegut and Neal Stephenson</li>
     </ul>
 </MatBody1>
-
-@foreach (var link in Link.All)
-{
-    <div>
-        <a href="@link.Url" target="_blank">
-            <MatButton>
-                <i class="fa fa-@link.Icon"></i> &nbsp; @link.Name
-            </MatButton>
-        </a>
-    </div>
-}
-
-@code
-{
-    class Link
-    {
-        public static readonly IEnumerable<Link> All = new List<Link>
-        {
-            new Link("Gmail", "mailto:tayco2702@gmail.com", "envelope"),
-            new Link("LinkedIn", "https://www.linkedin.com/in/tayco2702/", "linkedin"),
-            new Link("Stack Overflow", "https://stackoverflow.com/users/5803406/devnull?tab=profile", "stack-overflow"),
-            new Link("Github", "https://github.com/t-j-c", "github")
-        };
-
-        private Link(string name, string url, string icon)
-        {
-            Name = name;
-            Url = url;
-            Icon = icon;
-        }
-
-        public string Name { get; }
-        public string Url { get; }
-        public string Icon { get; }
-    }
-}
