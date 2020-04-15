@@ -21,7 +21,9 @@
     @foreach (var link in Link.All)
     {
         <a href="@link.Url" target="_blank">
-            <MatButton><i class="fa fa-@link.Icon"></i></MatButton>
+            <MatTooltip Tooltip="@link.Name" Wrap="true" Position="@MatTooltipPosition.Top">
+                <MatButton><i class="fa fa-@link.Icon"></i></MatButton>
+            </MatTooltip>
         </a>
     }
 </div>
