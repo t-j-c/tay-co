@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master
-    tags-ignore:
-      - no-deploy
 
 jobs:
   build:
@@ -17,6 +15,7 @@ jobs:
           dotnet-version: '3.1.100'
       - run: dotnet publish -c Release -o publish src/Tayco.sln
   deploy:
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
