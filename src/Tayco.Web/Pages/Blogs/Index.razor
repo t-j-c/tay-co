@@ -1,17 +1,16 @@
 ﻿@page "/blogs"
 
-<MatH2>Blogs</MatH2>
+<PageHeader Title="Blogs" />
 
-<MatThemeProvider Theme="@Warning">
-    <div>
-        <MatButton Icon="@MatIconNames.Warning" Outlined="true">Construction Zone</MatButton>
-    </div>
-</MatThemeProvider>
+<MatIcon Icon="@MatIconNames.Warning" />
+<MatIcon Icon="@MatIconNames.Warning" />
+<MatIcon Icon="@MatIconNames.Warning" />
 
-<br />
-<p>
-    Check back soon for some articles here!
-</p>
+<MatBody1>
+    This page is currently in progress.
+    I'll be moving the articles I've published on <a href="https://medium.com/@@taylor.collins">Medium</a> here in the near future.
+    Check back soon!
+</MatBody1>
 
 @code
 {

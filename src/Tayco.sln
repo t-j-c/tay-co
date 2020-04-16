@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tayco.Web", "Tayco.Web\Tayco.Web.csproj", "{33A3EBBA-EB5F-464F-A987-F452CCB7C845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tayco.Web", "Tayco.Web\Tayco.Web.csproj", "{33A3EBBA-EB5F-464F-A987-F452CCB7C845}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
