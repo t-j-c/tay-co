@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5C5EF4FE-A6F7-45B4-810E-0C96B0EF6A68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tayco.Web", "src\Tayco.Web\Tayco.Web.csproj", "{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "blogs", "blogs", "{5820CEB3-506A-45DA-8DBB-682F6CABFCF2}"
+	ProjectSection(SolutionItems) = preProject
+		blogs\index.json = blogs\index.json
+		blogs\making-a-static-website-with-csharp-part1.md = blogs\making-a-static-website-with-csharp-part1.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{5D7AC605-9E20-4DA4-89E2-2EDC123AFD62}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\upload-website.yml = .github\workflows\upload-website.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Debug|x64.Build.0 = Debug|Any CPU
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Release|x64.ActiveCfg = Release|Any CPU
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Release|x64.Build.0 = Release|Any CPU
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A3D6862-BBCA-44CD-98A6-DD50E10A7E38} = {5C5EF4FE-A6F7-45B4-810E-0C96B0EF6A68}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FEE1FE3-1E5B-456D-90C3-1B02D2354B4A}
+	EndGlobalSection
+EndGlobal
