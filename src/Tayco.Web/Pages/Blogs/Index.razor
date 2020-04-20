@@ -1,22 +1,42 @@
 ﻿@page "/blogs"
 
+@inject System.Net.Http.HttpClient Http
+
 <PageHeader Title="Blogs" />
 
-<MatIcon Icon="@MatIconNames.Warning" />
-<MatIcon Icon="@MatIconNames.Warning" />
-<MatIcon Icon="@MatIconNames.Warning" />
-
-<MatBody1>
-    This page is currently in progress.
-    I'll be moving the articles I've published on <a href="https://medium.com/@@taylor.collins">Medium</a> here in the near future.
-    Check back soon!
-</MatBody1>
+@if (Blogs == null)
+{
+    <span>Loading...</span>
+}
+else
+{
+    <MatNavMenu>
+        @foreach (var blog in Blogs)
+        {
+            var url = $"blogs/{blog.Id}";
+            <MatNavItem Href="@url">@blog.Title: @blog.Subtitle</MatNavItem>
+        }
+    </MatNavMenu>
+}
 
 @code
 {
-    MatTheme Warning = new MatTheme()
+    protected override async Task OnInitializedAsync()
     {
-        Primary = MatThemeColors.Orange._500.Value,
-        Secondary = MatThemeColors.BlueGrey._500.Value,
-    };
+        Blogs = await Http.GetJsonAsync<Blog[]>("blogs/index.json");
+    }
+
+    public Blog[] Blogs { get; private set; }
+
+    public class Blog
+    {
+        [System.Text.Json.Serialization.JsonPropertyName("id")]
+        public string Id { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("title")]
+        public string Title { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("subtitle")]
+        public string Subtitle { get; set; }
+    }
 }

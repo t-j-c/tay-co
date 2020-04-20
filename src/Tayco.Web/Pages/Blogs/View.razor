@@ -1,0 +1,31 @@
+﻿@page "/blogs/{id}"
+
+@inject System.Net.Http.HttpClient Http
+
+<PageHeader Title="@Id" />
+
+@if (Content == null)
+{
+    <span>Loading...</span>
+}
+else
+{
+    @((MarkupString)BuildHtmlFromMarkdown(Content))
+}
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    public string Content { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Content = await Http.GetStringAsync($"blogs/{Id}.md");
+    }
+
+    private string BuildHtmlFromMarkdown(string value) => Markdig.Markdown.ToHtml(
+        markdown: value,
+        pipeline: new MarkdownPipelineBuilder().UseAdvancedExtensions().Build()
+    );
+}
