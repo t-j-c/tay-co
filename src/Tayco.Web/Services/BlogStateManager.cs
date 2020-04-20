@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -22,7 +24,13 @@ namespace Tayco.Web.Services
             return _blogs;
         }
 
-        private async Task LoadBlogsAsync()
+        public async Task<Blog> FindAsync(string id)
+        {
+            await LoadBlogsAsync();
+            return _blogs.FirstOrDefault(b => b.Id.Equals(id, StringComparison.OrdinalIgnoreCase));
+        }
+
+        private async ValueTask LoadBlogsAsync()
         {
             if (_blogs != null) return;
 

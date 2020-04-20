@@ -6,5 +6,8 @@ namespace Tayco.Web.Components
     {
         [Parameter]
         public string Title { get; set; }
+
+        [Parameter]
+        public string Subtitle { get; set; }
     }
 }

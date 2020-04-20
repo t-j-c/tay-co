@@ -1,8 +1,12 @@
 ﻿@page "/blogs/{id}"
 
+@inject BlogStateManager BlogStateManager
 @inject System.Net.Http.HttpClient Http
 
-<PageHeader Title="@Id" />
+@if (Blog != null)
+{
+    <PageHeader Title="@Blog.Title" Subtitle="@Blog.Subtitle" />
+}
 
 @if (Content == null)
 {
@@ -17,10 +21,16 @@ else
     [Parameter]
     public string Id { get; set; }
 
+    public Blog Blog { get; private set; }
+
     public string Content { get; private set; }
 
     protected override async Task OnInitializedAsync()
     {
+        await Task.WhenAll(
+            BlogStateManager.FindAsync(Id).ContinueWith(c => Blog = c.Result)
+            );
+        Blog = await BlogStateManager.FindAsync(Id);
         Content = await Http.GetStringAsync($"https://s3.us-east-2.amazonaws.com/blogs.tay-co.com/{Id}.md");
     }
 
