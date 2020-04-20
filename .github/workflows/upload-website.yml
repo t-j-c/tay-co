@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'src/**'
 
 jobs:
   build:
@@ -13,7 +15,7 @@ jobs:
       - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '3.1.100'
-      - run: dotnet publish -c Release -o publish src/Tayco.sln
+      - run: dotnet publish -c Release -o publish Tayco.sln
       - uses: actions/upload-artifact@v1
         with:
           name: dist
