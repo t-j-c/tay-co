@@ -23,7 +23,7 @@ else
 {
     protected override async Task OnInitializedAsync()
     {
-        Blogs = await Http.GetJsonAsync<Blog[]>("blogs/index.json");
+        Blogs = await Http.GetJsonAsync<Blog[]>("https://s3.us-east-2.amazonaws.com/blogs.tay-co.com/index.json");
     }
 
     public Blog[] Blogs { get; private set; }

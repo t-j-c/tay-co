@@ -21,7 +21,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        Content = await Http.GetStringAsync($"blogs/{Id}.md");
+        Content = await Http.GetStringAsync($"https://s3.us-east-2.amazonaws.com/blogs.tay-co.com/{Id}.md");
     }
 
     private string BuildHtmlFromMarkdown(string value) => Markdig.Markdown.ToHtml(
