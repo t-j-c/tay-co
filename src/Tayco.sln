@@ -5,6 +5,19 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tayco.Web", "Tayco.Web\Tayco.Web.csproj", "{33A3EBBA-EB5F-464F-A987-F452CCB7C845}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "blogs", "blogs", "{BC68881D-F2F8-4A5B-875E-DCDF7BEC2D46}"
+	ProjectSection(SolutionItems) = preProject
+		..\blogs\index.json = ..\blogs\index.json
+		..\blogs\making-a-static-website-with-csharp-part1.md = ..\blogs\making-a-static-website-with-csharp-part1.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{498D82EB-9F16-4F72-B55E-AA2DD90349A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{8BA042A0-C680-443B-A005-FA4B7C26A529}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\workflow.yml = ..\.github\workflows\workflow.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +43,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC68881D-F2F8-4A5B-875E-DCDF7BEC2D46} = {498D82EB-9F16-4F72-B55E-AA2DD90349A5}
+		{8BA042A0-C680-443B-A005-FA4B7C26A529} = {498D82EB-9F16-4F72-B55E-AA2DD90349A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FEE1FE3-1E5B-456D-90C3-1B02D2354B4A}
