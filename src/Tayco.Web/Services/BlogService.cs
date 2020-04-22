@@ -9,13 +9,13 @@ using Tayco.Web.Model;
 
 namespace Tayco.Web.Services
 {
-    public class BlogStateManager
+    public class BlogService
     {
         private readonly HttpClient _client;
         private readonly string _blogsEndpoint;
         private Blog[] _blogs;
 
-        public BlogStateManager(HttpClient client, IConfiguration configuration)
+        public BlogService(HttpClient client, IConfiguration configuration)
         {
             _client = client;
             _blogsEndpoint = configuration["BlogsEndpoint:BaseUrl"];
@@ -37,7 +37,7 @@ namespace Tayco.Web.Services
         {
             if (_blogs != null) return;
 
-            var response = await _client.GetAsync($"{_blogsEndpoint}/index.json");
+            var response = await _client.GetAsync($"{_blogsEndpoint}index.json");
             var stream = await response.Content.ReadAsStreamAsync();
             _blogs = await JsonSerializer.DeserializeAsync<Blog[]>(stream);
         }

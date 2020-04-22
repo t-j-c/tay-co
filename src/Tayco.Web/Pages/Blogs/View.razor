@@ -1,6 +1,6 @@
 ﻿@page "/blogs/{id}"
 
-@inject BlogStateManager BlogStateManager
+@inject BlogService BlogService
 @inject System.Net.Http.HttpClient Http
 
 @if (Blog != null)
@@ -28,10 +28,9 @@ else
     protected override async Task OnInitializedAsync()
     {
         await Task.WhenAll(
-            BlogStateManager.FindAsync(Id).ContinueWith(c => Blog = c.Result)
+            BlogService.FindAsync(Id).ContinueWith(c => Blog = c.Result),
+            Http.GetStringAsync($"https://s3.us-east-2.amazonaws.com/blogs.tay-co.com/{Id}.md").ContinueWith(c => Content = c.Result)
             );
-        Blog = await BlogStateManager.FindAsync(Id);
-        Content = await Http.GetStringAsync($"https://s3.us-east-2.amazonaws.com/blogs.tay-co.com/{Id}.md");
     }
 
     private string BuildHtmlFromMarkdown(string value) => Markdig.Markdown.ToHtml(

@@ -1,6 +1,6 @@
 ﻿@page "/blogs"
 
-@inject BlogStateManager BlogStateManager
+@inject BlogService BlogService
 
 <PageHeader Title="Blogs" />
 
@@ -23,7 +23,7 @@ else
 {
     protected override async Task OnInitializedAsync()
     {
-        Blogs = await BlogStateManager.GetBlogsAsync();
+        Blogs = await BlogService.GetBlogsAsync();
     }
 
     public IEnumerable<Blog> Blogs { get; private set; }

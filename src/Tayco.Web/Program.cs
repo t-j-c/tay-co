@@ -20,7 +20,7 @@ namespace Tayco.Web
 
         private static IServiceCollection ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<BlogStateManager>();
+            services.AddSingleton<BlogService>();
             return services;
         }
 
