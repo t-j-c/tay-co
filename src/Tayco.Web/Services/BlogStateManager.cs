@@ -34,7 +34,8 @@ namespace Tayco.Web.Services
         {
             if (_blogs != null) return;
 
-            var response = await _client.GetAsync("https://s3.us-east-2.amazonaws.com/blogs.tay-co.com/index.json");
+            //var response = await _client.GetAsync("https://s3.us-east-2.amazonaws.com/blogs.tay-co.com/index.json");
+            var response = await _client.GetAsync($"blogs/index.json");
             var stream = await response.Content.ReadAsStreamAsync();
             _blogs = await JsonSerializer.DeserializeAsync<Blog[]>(stream);
         }

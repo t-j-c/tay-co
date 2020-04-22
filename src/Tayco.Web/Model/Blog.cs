@@ -1,4 +1,8 @@
-﻿using System.Text.Json.Serialization;
+﻿using System;
+using System.Diagnostics;
+using System.Globalization;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Tayco.Web.Model
 {
@@ -15,5 +19,23 @@ namespace Tayco.Web.Model
 
         [JsonPropertyName("subtitle")]
         public string Subtitle { get; set; }
+
+        [JsonPropertyName("uploadDate")]
+        [JsonConverter(typeof(BlogDateConverter))]
+        public DateTime UploadDate { get; set; }
+    }
+
+    public class BlogDateConverter : JsonConverter<DateTime>
+    {
+        public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        {
+            var json = reader.GetString();
+            Debug.WriteLine(json);
+            return DateTime.ParseExact(json, "MMMM dd, yyyy", CultureInfo.InvariantCulture);            
+        }
+
+        public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
+        {
+        }
     }
 }

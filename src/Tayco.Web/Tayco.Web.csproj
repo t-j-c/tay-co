@@ -20,5 +20,13 @@
     <Watch Include="**\*.html" />
     <Watch Include="**\*.css" />
   </ItemGroup>
+
+  <ItemGroup>
+    <MySourceFiles Include="$(SolutionDir)blogs\*.*"/>
+  </ItemGroup>
+
+  <Target Name="CopyBlogs" AfterTargets="PostBuildEvent">
+    <Copy SourceFiles="@(MySourceFiles)" DestinationFolder="$(ProjectDir)wwwroot\blogs"/>
+  </Target>
   
 </Project>

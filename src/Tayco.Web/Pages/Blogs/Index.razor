@@ -11,7 +11,7 @@
 else
 {
     <MatNavMenu>
-        @foreach (var blog in Blogs)
+        @foreach (var blog in Blogs.OrderByDescending(b => b.UploadDate))
         {
             var url = $"blogs/{blog.Id}";
             <MatNavItem Href="@url">@blog.Name</MatNavItem>
