@@ -25,7 +25,7 @@
     <MySourceFiles Include="$(SolutionDir)blogs\*.*"/>
   </ItemGroup>
 
-  <Target Name="CopyBlogs" AfterTargets="PostBuildEvent">
+  <Target Name="CopyBlogs" AfterTargets="PostBuildEvent" Condition="'$(Configuration)'=='Debug'">
     <Copy SourceFiles="@(MySourceFiles)" DestinationFolder="$(ProjectDir)wwwroot\blogs"/>
   </Target>
   
