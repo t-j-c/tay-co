@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -11,11 +12,13 @@ namespace Tayco.Web.Services
     public class BlogStateManager
     {
         private readonly HttpClient _client;
+        private readonly string _blogsEndpoint;
         private Blog[] _blogs;
 
-        public BlogStateManager(HttpClient client)
+        public BlogStateManager(HttpClient client, IConfiguration configuration)
         {
             _client = client;
+            _blogsEndpoint = configuration["BlogsEndpoint:BaseUrl"];
         }
 
         public async Task<IEnumerable<Blog>> GetBlogsAsync()
@@ -34,8 +37,7 @@ namespace Tayco.Web.Services
         {
             if (_blogs != null) return;
 
-            //var response = await _client.GetAsync("https://s3.us-east-2.amazonaws.com/blogs.tay-co.com/index.json");
-            var response = await _client.GetAsync($"blogs/index.json");
+            var response = await _client.GetAsync($"{_blogsEndpoint}/index.json");
             var stream = await response.Content.ReadAsStreamAsync();
             _blogs = await JsonSerializer.DeserializeAsync<Blog[]>(stream);
         }
