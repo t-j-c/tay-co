@@ -33,6 +33,11 @@ namespace Tayco.Web.Services
             return _blogs.FirstOrDefault(b => b.Id.Equals(id, StringComparison.OrdinalIgnoreCase));
         }
 
+        public Task<string> GetBlogContent(string id)
+        {
+            return _client.GetStringAsync($"{_blogsEndpoint}{id}.md");
+        }
+
         private async ValueTask LoadBlogsAsync()
         {
             if (_blogs != null) return;

@@ -9,7 +9,7 @@ namespace Tayco.Web.Model
     public class Blog
     {
         [JsonIgnore]
-        public string Name => $"{Title}: {Subtitle}";
+        public string Name => string.IsNullOrWhiteSpace(Subtitle) ? Title : $"{Title}: {Subtitle}";
 
         [JsonPropertyName("id")]
         public string Id { get; set; }

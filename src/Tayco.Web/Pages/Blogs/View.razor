@@ -1,7 +1,6 @@
 ﻿@page "/blogs/{id}"
 
 @inject BlogService BlogService
-@inject System.Net.Http.HttpClient Http
 
 @if (Blog != null)
 {
@@ -29,7 +28,7 @@ else
     {
         await Task.WhenAll(
             BlogService.FindAsync(Id).ContinueWith(c => Blog = c.Result),
-            Http.GetStringAsync($"https://s3.us-east-2.amazonaws.com/blogs.tay-co.com/{Id}.md").ContinueWith(c => Content = c.Result)
+            BlogService.GetBlogContent(Id).ContinueWith(c => Content = c.Result)
             );
     }
 

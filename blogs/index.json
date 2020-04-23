@@ -4,5 +4,10 @@
     "title": "Making a static website with C# - Part 1",
     "subtitle": "Building the application",
     "uploadDate": "April 17, 2020"
+  },
+  {
+    "id": "fluent-parallel-tasks-in-csharp",
+    "title": "Fluent Parallel Tasks in C#",
+    "uploadDate": "December 02, 2019"
   }
 ]
