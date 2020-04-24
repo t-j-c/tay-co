@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -27,12 +26,8 @@ namespace Tayco.Web.Model
 
     public class BlogDateConverter : JsonConverter<DateTime>
     {
-        public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
-        {
-            var json = reader.GetString();
-            Debug.WriteLine(json);
-            return DateTime.ParseExact(json, "MMMM dd, yyyy", CultureInfo.InvariantCulture);            
-        }
+        public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) => 
+            DateTime.ParseExact(reader.GetString(), "MMMM dd, yyyy", CultureInfo.InvariantCulture);
 
         public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
         {

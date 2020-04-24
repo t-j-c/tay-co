@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tayco.Web", "src\Tayco.Web\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "blogs", "blogs", "{5820CEB3-506A-45DA-8DBB-682F6CABFCF2}"
 	ProjectSection(SolutionItems) = preProject
+		blogs\cheap-architecture.md = blogs\cheap-architecture.md
 		blogs\fluent-parallel-tasks-in-csharp.md = blogs\fluent-parallel-tasks-in-csharp.md
 		blogs\index.json = blogs\index.json
 		blogs\making-a-static-website-with-csharp-part1.md = blogs\making-a-static-website-with-csharp-part1.md
+		blogs\testing-a-net-core-web-api-part-1.md = blogs\testing-a-net-core-web-api-part-1.md
+		blogs\testing-a-net-core-web-api-part-2.md = blogs\testing-a-net-core-web-api-part-2.md
+		blogs\testing-a-net-core-web-api-part-3.md = blogs\testing-a-net-core-web-api-part-3.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{5D7AC605-9E20-4DA4-89E2-2EDC123AFD62}"

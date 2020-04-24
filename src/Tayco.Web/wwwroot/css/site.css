@@ -131,6 +131,11 @@ img {
     height: auto;
 }
 
+figcaption {
+    font-style: italic;
+    font-size: smaller;
+}
+
 blockquote {
     display: block;
     margin-top: 1em;

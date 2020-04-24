@@ -9,5 +9,29 @@
     "id": "fluent-parallel-tasks-in-csharp",
     "title": "Fluent Parallel Tasks in C#",
     "uploadDate": "December 02, 2019"
+  },
+  {
+    "id": "cheap-architecture",
+    "title": "Cheap Architecture",
+    "subtitle": "Finding the sweet spot in Software Architecture",
+    "uploadDate": "July 12, 2019"
+  },
+  {
+    "id": "testing-a-net-core-web-api-part-3",
+    "title": "Testing a .NET Core Web API - Part 3",
+    "subtitle": "Adding a Redis cache",
+    "uploadDate": "July 23, 2018"
+  },
+  {
+    "id": "testing-a-net-core-web-api-part-2",
+    "title": "Testing a .NET Core Web API - Part 2",
+    "subtitle": "From PostgreSQL to Cosmos DB",
+    "uploadDate": "June 24, 2018"
+  },
+  {
+    "id": "testing-a-net-core-web-api-part-1",
+    "title": "Testing a .NET Core Web API - Part 1",
+    "subtitle": "Performance tests",
+    "uploadDate": "September 17, 2017"
   }
 ]
