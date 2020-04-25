@@ -4,16 +4,6 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-a, .btn-link {
-    color: #0366d6;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
 app {
     position: relative;
     display: flex;
@@ -26,8 +16,17 @@ app {
     align-items: center;
 }
 
+a {
+    color: #00c853;
+}
+
+    a > .mat-card {
+        color: #1b5e20;
+    }
+
 .main {
     flex: 1;
+    background-color: #fafafa;
 }
 
     .main .top-row {
@@ -108,6 +107,11 @@ app {
 
 .content {
     padding-top: 1.1rem;
+}
+
+.mat-card-content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .navbar-toggler {
