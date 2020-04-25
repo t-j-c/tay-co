@@ -22,11 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <MySourceFiles Include="$(SolutionDir)blogs\*.*"/>
+    <MySourceFiles Include="$(SolutionDir)blogs\*.*" />
   </ItemGroup>
 
   <Target Name="CopyBlogs" AfterTargets="PostBuildEvent" Condition="'$(Configuration)'=='Debug'">
-    <Copy SourceFiles="@(MySourceFiles)" DestinationFolder="$(ProjectDir)wwwroot\blogs"/>
+    <Copy SourceFiles="@(MySourceFiles)" DestinationFolder="$(ProjectDir)wwwroot\blogs" />
   </Target>
   
 </Project>

@@ -135,6 +135,12 @@ img {
     height: auto;
 }
 
+.profile-photo {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
 figcaption {
     font-style: italic;
     font-size: smaller;
@@ -180,6 +186,12 @@ blockquote {
 
     .main .top-row a, .main .top-row .btn-link {
         margin-left: 0;
+    }
+
+    .profile-photo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
