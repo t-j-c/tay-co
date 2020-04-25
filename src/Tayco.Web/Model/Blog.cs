@@ -19,6 +19,9 @@ namespace Tayco.Web.Model
         [JsonPropertyName("subtitle")]
         public string Subtitle { get; set; }
 
+        [JsonPropertyName("imageUrl")]
+        public string ImageUrl { get; set; }
+
         [JsonPropertyName("uploadDate")]
         [JsonConverter(typeof(BlogDateConverter))]
         public DateTime UploadDate { get; set; }

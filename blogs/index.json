@@ -3,35 +3,41 @@
     "id": "making-a-static-website-with-csharp-part1",
     "title": "Making a static website with C# - Part 1",
     "subtitle": "Building the application",
-    "uploadDate": "April 17, 2020"
+    "uploadDate": "April 17, 2020",
+    "imageUrl": "https://cdn-images-1.medium.com/max/2288/1*x37JofkihAcy4cV2rqKwRA.png"
   },
   {
     "id": "fluent-parallel-tasks-in-csharp",
     "title": "Fluent Parallel Tasks in C#",
-    "uploadDate": "December 02, 2019"
+    "uploadDate": "December 02, 2019",
+    "imageUrl": "https://cdn-images-1.medium.com/max/7892/1*5AR28T0O-z8CiKMzlcW1Lg.jpeg"
   },
   {
     "id": "cheap-architecture",
     "title": "Cheap Architecture",
     "subtitle": "Finding the sweet spot in Software Architecture",
-    "uploadDate": "July 12, 2019"
+    "uploadDate": "July 12, 2019",
+    "imageUrl": "https://cdn-images-1.medium.com/max/2000/0*71bax7oD7_lYDiyC.jpg"
   },
   {
     "id": "testing-a-net-core-web-api-part-3",
     "title": "Testing a .NET Core Web API - Part 3",
     "subtitle": "Adding a Redis cache",
-    "uploadDate": "July 23, 2018"
+    "uploadDate": "July 23, 2018",
+    "imageUrl": "https://cdn-images-1.medium.com/max/10214/1*wKlao_64cFXa0ttSm7v7Ug.jpeg"
   },
   {
     "id": "testing-a-net-core-web-api-part-2",
     "title": "Testing a .NET Core Web API - Part 2",
     "subtitle": "From PostgreSQL to Cosmos DB",
-    "uploadDate": "June 24, 2018"
+    "uploadDate": "June 24, 2018",
+    "imageUrl": "https://cdn-images-1.medium.com/max/2160/1*0pcQu4kfwJJUDNQP1eVwIQ.jpeg"
   },
   {
     "id": "testing-a-net-core-web-api-part-1",
     "title": "Testing a .NET Core Web API - Part 1",
     "subtitle": "Performance tests",
-    "uploadDate": "September 17, 2017"
+    "uploadDate": "September 17, 2017",
+    "imageUrl": "https://cdn-images-1.medium.com/max/3840/1*j4wfpB40AyyJkhTAsvWcXg.jpeg"
   }
 ]

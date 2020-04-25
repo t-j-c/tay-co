@@ -10,13 +10,25 @@
 }
 else
 {
-    <MatNavMenu>
+<div class="mat-layout-grid">
+    <div class="mat-layout-grid-inner">
         @foreach (var blog in Blogs.OrderByDescending(b => b.UploadDate))
         {
             var url = $"blogs/{blog.Id}";
-            <MatNavItem Href="@url">@blog.Name</MatNavItem>
+            <div class="mat-layout-grid-cell">
+                <a href="@url">
+                    <MatCard>
+                        <MatCardContent>
+                            <MatCardMedia Wide="true" ImageUrl="@blog.ImageUrl"></MatCardMedia>
+                            <MatH6>@blog.Title</MatH6>
+                            <MatSubtitle2>@blog.Subtitle</MatSubtitle2>
+                        </MatCardContent>
+                    </MatCard>
+                </a>
+            </div>
         }
-    </MatNavMenu>
+    </div>
+</div>
 }
 
 @code
