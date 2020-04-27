@@ -156,6 +156,13 @@ blockquote {
     padding-left: 0.5em;
 }
 
+pre {
+    border-style: groove;
+    padding-left: 1rem;
+    white-space: pre-wrap;
+    margin-bottom: 1rem;
+}
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
@@ -213,8 +220,8 @@ blockquote {
     }
 
     .main > div {
-        padding-left: 2rem !important;
-        padding-right: 10rem !important;
+        padding-left: 2% !important;
+        padding-right: 10% !important;
     }
 
     .navbar-toggler {
