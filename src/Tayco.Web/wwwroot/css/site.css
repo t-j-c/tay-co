@@ -163,6 +163,11 @@ pre {
     margin-bottom: 1rem;
 }
 
+footer {
+    text-align: center;
+    padding: 1%;
+}
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
