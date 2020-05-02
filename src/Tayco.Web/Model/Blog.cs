@@ -25,6 +25,12 @@ namespace Tayco.Web.Model
         [JsonPropertyName("uploadDate")]
         [JsonConverter(typeof(BlogDateConverter))]
         public DateTime UploadDate { get; set; }
+
+        [JsonIgnore]
+        public Blog Previous { get; set; }
+        
+        [JsonIgnore]
+        public Blog Next { get; set; }
     }
 
     public class BlogDateConverter : JsonConverter<DateTime>

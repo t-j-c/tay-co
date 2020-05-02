@@ -14,6 +14,30 @@
 else
 {
     @((MarkupString)BuildHtmlFromMarkdown(Content))
+
+    <MatDivider />
+
+    <div>
+        <MatOverline>Keep Reading:</MatOverline>
+        @if (Blog.Next != null)
+        {
+            var url = $"blogs/{Blog.Next.Id}";
+            <div>
+                <NavLink href="@url" target="_parent">
+                    <MatButton Icon="@MatIconNames.Arrow_back" Label="@Blog.Next.Title" />
+                </NavLink>
+            </div>
+        }
+        @if (Blog.Previous != null)
+        {
+            var url = $"blogs/{Blog.Previous.Id}";
+            <div>
+                <NavLink href="@url" target="_parent">
+                    <MatButton Icon="@MatIconNames.Arrow_forward" Label="@Blog.Previous.Title" />
+                </NavLink>
+            </div>
+        }
+    </div>
 }
 
 @code {

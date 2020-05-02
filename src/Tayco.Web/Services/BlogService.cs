@@ -45,6 +45,12 @@ namespace Tayco.Web.Services
             var response = await _client.GetAsync($"{_blogsEndpoint}index.json");
             var stream = await response.Content.ReadAsStreamAsync();
             _blogs = await JsonSerializer.DeserializeAsync<Blog[]>(stream);
+            
+            foreach (var blog in _blogs)
+            {
+                blog.Next = _blogs.OrderBy(b => b.UploadDate).FirstOrDefault(b => b.UploadDate > blog.UploadDate);
+                blog.Previous = _blogs.OrderByDescending(b => b.UploadDate).FirstOrDefault(b => b.UploadDate < blog.UploadDate);
+            }
         }
     }
 }
