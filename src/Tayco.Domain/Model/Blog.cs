@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Tayco.Web.Model
+namespace Tayco.Domain.Model
 {
     public class Blog
     {

@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Tayco.Web.Services;
+using Tayco.Domain;
 
 namespace Tayco.Web
 {
@@ -20,7 +20,7 @@ namespace Tayco.Web
 
         private static IServiceCollection ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<BlogService>();
+            services.AddDomainServices();
             return services;
         }
 

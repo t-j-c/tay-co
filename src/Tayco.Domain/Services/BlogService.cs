@@ -1,24 +1,20 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
-using System.Text.Json;
 using System.Threading.Tasks;
-using Tayco.Web.Model;
+using Tayco.Domain.Model;
+using Tayco.Domain.Repositories;
 
-namespace Tayco.Web.Services
+namespace Tayco.Domain.Services
 {
     public class BlogService
     {
-        private readonly HttpClient _client;
-        private readonly string _blogsEndpoint;
+        private readonly IBlogRepository _repository;
         private Blog[] _blogs;
 
-        public BlogService(HttpClient client, IConfiguration configuration)
+        public BlogService(IBlogRepository repository)
         {
-            _client = client;
-            _blogsEndpoint = configuration["BlogsEndpoint:BaseUrl"];
+            _repository = repository;
         }
 
         public async Task<IEnumerable<Blog>> GetBlogsAsync()
@@ -33,18 +29,16 @@ namespace Tayco.Web.Services
             return _blogs.FirstOrDefault(b => b.Id.Equals(id, StringComparison.OrdinalIgnoreCase));
         }
 
-        public Task<string> GetBlogContent(string id)
+        public Task<string> GetBlogContentAsync(string id)
         {
-            return _client.GetStringAsync($"{_blogsEndpoint}{id}.md");
+            return _repository.GetBlogContentAsync(id);
         }
 
         private async ValueTask LoadBlogsAsync()
         {
             if (_blogs != null) return;
 
-            var response = await _client.GetAsync($"{_blogsEndpoint}index.json");
-            var stream = await response.Content.ReadAsStreamAsync();
-            _blogs = await JsonSerializer.DeserializeAsync<Blog[]>(stream);
+            _blogs = (await _repository.GetAllAsync()).ToArray();
             
             foreach (var blog in _blogs)
             {

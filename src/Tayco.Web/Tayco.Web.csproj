@@ -25,6 +25,10 @@
     <MySourceFiles Include="$(SolutionDir)blogs\*.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Tayco.Domain\Tayco.Domain.csproj" />
+  </ItemGroup>
+
   <Target Name="CopyBlogs" AfterTargets="PostBuildEvent" Condition="'$(Configuration)'=='Debug'">
     <Copy SourceFiles="@(MySourceFiles)" DestinationFolder="$(ProjectDir)wwwroot\blogs" />
   </Target>

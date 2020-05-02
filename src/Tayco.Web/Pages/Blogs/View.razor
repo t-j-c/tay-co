@@ -52,7 +52,7 @@ else
     {
         await Task.WhenAll(
             BlogService.FindAsync(Id).ContinueWith(c => Blog = c.Result),
-            BlogService.GetBlogContent(Id).ContinueWith(c => Content = c.Result)
+            BlogService.GetBlogContentAsync(Id).ContinueWith(c => Content = c.Result)
             );
     }
 
