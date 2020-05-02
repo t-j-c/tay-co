@@ -39,5 +39,12 @@
     "subtitle": "Performance tests",
     "uploadDate": "September 17, 2017",
     "imageUrl": "https://cdn-images-1.medium.com/max/3840/1*j4wfpB40AyyJkhTAsvWcXg.jpeg"
+  },
+  {
+    "id": "making-a-static-website-with-csharp-part2",
+    "title": "Making a static website with C# - Part 2",
+    "subtitle": "Hosting in AWS",
+    "uploadDate": "May 01, 2020",
+    "imageUrl": "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png"
   }
 ]

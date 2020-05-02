@@ -1,3 +1,8 @@
+*This is part of a series of posts on setting up a static website with Blazor and AWS.
+In this part, we go over what's needed to build a static website with Blazor WebAssembly.
+In Part 2, we'll take a look at how you can host that website in AWS.*
+
+---
 
 If you follow the Microsoft development community at all, you’ve most likely already heard of the new web development framework called Blazor. If you haven’t heard of it, here’s an overview from the [product site](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor):
 
@@ -104,7 +109,7 @@ While my website isn’t the most elegant (I certainly don’t claim to be an ex
 
 I’m excited to continue extending the functionality of my site. The following are some things that I’ve done (or are considering doing) and will likely write about in continuation of this series:
 
-* Hosting the website in AWS
+* Hosting the website in AWS (Part 2 in this series)
 
 * Implementing a CI/CD pipeline using GitHub Actions
 

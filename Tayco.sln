@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "blogs", "blogs", "{5820CEB3
 		blogs\fluent-parallel-tasks-in-csharp.md = blogs\fluent-parallel-tasks-in-csharp.md
 		blogs\index.json = blogs\index.json
 		blogs\making-a-static-website-with-csharp-part1.md = blogs\making-a-static-website-with-csharp-part1.md
+		blogs\making-a-static-website-with-csharp-part2.md = blogs\making-a-static-website-with-csharp-part2.md
 		blogs\testing-a-net-core-web-api-part-1.md = blogs\testing-a-net-core-web-api-part-1.md
 		blogs\testing-a-net-core-web-api-part-2.md = blogs\testing-a-net-core-web-api-part-2.md
 		blogs\testing-a-net-core-web-api-part-3.md = blogs\testing-a-net-core-web-api-part-3.md
