@@ -18,10 +18,11 @@ The code is structured in the following directories:
 
 ## Contributing
 
-I'll gladly review contributions to the repository. Examples of welcomed changes include:
+Contributions to the repository are more than welcome. These may include:
 - Fixes to typos throughout the site (especially in blogs)
 - Bug fixes
 - Style updates
+- Optimizations
 
 The steps for contributing are as follows:
 1. Create a branch off of the latest `master`
