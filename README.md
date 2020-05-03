@@ -16,8 +16,6 @@ The code is structured in the following directories:
 - `.github/workflows`
   - Contains `.yml` files defining the different workflows triggered by [Github Actions](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions)
 
----
-
 ## Contributing
 
 I'll gladly review contributions to the repository. Examples of welcomed changes include:
