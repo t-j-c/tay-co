@@ -21,7 +21,7 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: dist
-          path: publish/Tayco.Web/dist
+          path: publish/wwwroot
   deploy:
     needs: [build]
     runs-on: ubuntu-latest
