@@ -26,11 +26,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\upload-website.yml = .github\workflows\upload-website.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tayco.Domain.UnitTests", "test\Tayco.UnitTest\Tayco.Domain.UnitTests.csproj", "{732EA97C-7455-45B4-B2EA-50F7A64CB6E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tayco.Domain.UnitTests", "test\Tayco.UnitTest\Tayco.Domain.UnitTests.csproj", "{732EA97C-7455-45B4-B2EA-50F7A64CB6E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E6B415BF-D160-4F2F-B953-B472E484AA6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tayco.Domain", "src\Tayco.Domain\Tayco.Domain.csproj", "{42E8143E-8FCC-41D4-A01B-E9619AEBA1BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tayco.Domain", "src\Tayco.Domain\Tayco.Domain.csproj", "{42E8143E-8FCC-41D4-A01B-E9619AEBA1BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
