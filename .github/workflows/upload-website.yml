@@ -2,6 +2,10 @@ name: Upload Website
 
 on:
   workflow_dispatch:
+    inputs:
+      input_name:
+        required: false
+        default: "Upload Website - Manual Trigger"
   push:
     branches:
       - master
