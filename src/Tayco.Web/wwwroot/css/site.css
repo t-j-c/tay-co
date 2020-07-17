@@ -103,6 +103,7 @@ a {
     .social-footer > a {
         text-align: center;
         grid-row: 1;
+        overflow: hidden;
     }
 
 .content {
@@ -242,5 +243,7 @@ footer {
         bottom: 0;
         position: absolute;
         display: grid !important;
+        width: 250px;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
