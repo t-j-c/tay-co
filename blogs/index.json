@@ -4,47 +4,47 @@
     "title": "Making a static website with C# - Part 1",
     "subtitle": "Building the application",
     "uploadDate": "April 17, 2020",
-    "imageUrl": "https://cdn-images-1.medium.com/max/2288/1*x37JofkihAcy4cV2rqKwRA.png"
+    "imageUrl": "https://i.ibb.co/N9c73jm/1-x37-Jofkih-Acy4c-V2rq-Kw-RA.png"
   },
   {
     "id": "fluent-parallel-tasks-in-csharp",
     "title": "Fluent Parallel Tasks in C#",
     "uploadDate": "December 02, 2019",
-    "imageUrl": "https://cdn-images-1.medium.com/max/7892/1*5AR28T0O-z8CiKMzlcW1Lg.jpeg"
+    "imageUrl": "https://i.ibb.co/3TFwwrx/Image.png"
   },
   {
     "id": "cheap-architecture",
     "title": "Cheap Architecture",
     "subtitle": "Finding the sweet spot in Software Architecture",
     "uploadDate": "July 12, 2019",
-    "imageUrl": "https://cdn-images-1.medium.com/max/2000/0*71bax7oD7_lYDiyC.jpg"
+    "imageUrl": "https://i.ibb.co/MPnHdP6/0-71bax7o-D7-l-YDiy-C.jpg"
   },
   {
     "id": "testing-a-net-core-web-api-part-3",
     "title": "Testing a .NET Core Web API - Part 3",
     "subtitle": "Adding a Redis cache",
     "uploadDate": "July 23, 2018",
-    "imageUrl": "https://cdn-images-1.medium.com/max/10214/1*wKlao_64cFXa0ttSm7v7Ug.jpeg"
+    "imageUrl": "https://i.ibb.co/6Pms0WL/1-w-Klao-64c-FXa0tt-Sm7v7-Ug.jpg"
   },
   {
     "id": "testing-a-net-core-web-api-part-2",
     "title": "Testing a .NET Core Web API - Part 2",
     "subtitle": "From PostgreSQL to Cosmos DB",
     "uploadDate": "June 24, 2018",
-    "imageUrl": "https://cdn-images-1.medium.com/max/2160/1*0pcQu4kfwJJUDNQP1eVwIQ.jpeg"
+    "imageUrl": "https://i.ibb.co/0qxKGSp/1-0pc-Qu4kfw-JJUDNQP1e-Vw-IQ.jpg"
   },
   {
     "id": "testing-a-net-core-web-api-part-1",
     "title": "Testing a .NET Core Web API - Part 1",
     "subtitle": "Performance tests",
     "uploadDate": "September 17, 2017",
-    "imageUrl": "https://cdn-images-1.medium.com/max/3840/1*j4wfpB40AyyJkhTAsvWcXg.jpeg"
+    "imageUrl": "https://i.ibb.co/wQwdrgV/1-j4wfp-B40-Ayy-Jkh-TAsv-Wc-Xg.jpg"
   },
   {
     "id": "making-a-static-website-with-csharp-part2",
     "title": "Making a static website with C# - Part 2",
     "subtitle": "Hosting in AWS",
     "uploadDate": "May 01, 2020",
-    "imageUrl": "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png"
+    "imageUrl": "https://i.ibb.co/p0Vvd0Y/Aws-logo-smile-1200x630.png"
   }
 ]
