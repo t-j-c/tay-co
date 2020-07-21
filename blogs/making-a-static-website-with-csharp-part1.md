@@ -1,6 +1,7 @@
-*This is part of a series of posts on setting up a static website with Blazor and AWS.
-In this part, we go over what's needed to build a static website with Blazor WebAssembly.
-In Part 2, we'll take a look at how you can host that website in AWS.*
+*This is part of a series of posts on setting up a static website with Blazor and AWS.<br>
+In Part 1 of this series, we go over what's needed to build a static website with Blazor WebAssembly.<br>
+In Part 2, we look at how you can host that website in AWS.<br>
+In Part 3, we setup a CI/CD pipeline using GitHub Actions.*
 
 ---
 
