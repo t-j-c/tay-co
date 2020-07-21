@@ -46,5 +46,12 @@
     "subtitle": "Hosting in AWS",
     "uploadDate": "May 01, 2020",
     "imageUrl": "https://i.ibb.co/p0Vvd0Y/Aws-logo-smile-1200x630.png"
+  },
+  {
+    "id": "making-a-static-website-with-csharp-part3",
+    "title": "Making a static website with C# - Part 3",
+    "subtitle": "CI/CD with GitHub Actions",
+    "uploadDate": "July 20, 2020",
+    "imageUrl": "https://i.ibb.co/FD7Dzyq/Blazor-actions-aws.png"
   }
 ]
