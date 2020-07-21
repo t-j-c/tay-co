@@ -5,7 +5,7 @@ In Part 3, we setup a CI/CD pipeline using GitHub Actions.*
 
 ---
 
-As a result of Part 2 in this series, we succesfully published a Blazor WebAssembly app as a static website in AWS. 
+As a result of Part 2 in this series, we successfully published a Blazor WebAssembly app as a static website in AWS. 
 This process essentially boiled down to the following:
   
 1. Build our Blazor app
@@ -199,7 +199,7 @@ As you can see in the `deploy` job, we use the `${{ secrets.<SECRET_NAME> }}` sy
 
 ---
 
-## Summary
+## Automate all the things
 
 And with that, we've now automated the build and deployment steps that we previously had to do manually.
 Now if we want to make a change, we just do the development locally and then push the changes to the server.
