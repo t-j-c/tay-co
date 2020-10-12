@@ -1,6 +1,6 @@
 ![Upload Website](https://github.com/t-j-c/tay-co/workflows/Upload%20Website/badge.svg?branch=master)
 
-This repository contains the code for my personal website at http://tay-co.com/
+This repository contains the code for my personal website at https://tay-co.com/
 
 The code is structured in the following directories:
 - `blogs`
