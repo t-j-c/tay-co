@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width" />
     <title>Taylor Collins</title>
     <base href="/" />
-    <link href="font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+
+    <link href="font-awesome/5.14.0/css/all.min.css" rel="preload" as="style" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="preload" as="style" />
+    <link href="css/site.css" rel="preload" as="style" />
+    <link href="_content/MatBlazor/dist/matBlazor.css" rel="preload" as="style" />
+    <link href="js/brotli.decode.js" rel="preload" as="script" />
+    <link href="_content/MatBlazor/dist/matBlazor.js" rel="preload" as="script" />
+
+    <link href="font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
     <link href="_content/MatBlazor/dist/matBlazor.css" rel="stylesheet" />
@@ -24,7 +32,7 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    <script src="js/brotli.decode.js" type="text/javascript"></script>
+    <script src="js/brotli.decode.js" type="text/javascript" defer></script>
     <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <script>
         Blazor.start({
@@ -47,7 +55,7 @@
             }
         });
     </script>
-    <script src="_content/MatBlazor/dist/matBlazor.js"></script>
+    <script src="_content/MatBlazor/dist/matBlazor.js" defer></script>
 </body>
 
 </html>
