@@ -22,7 +22,7 @@ jobs:
           dotnet-version: '5.0.x'
       - run: dotnet build -c Release
       - run: dotnet test -c Release --no-build
-      - run: dotnet publish -c Release --no-build -o publish Tayco.sln
+      - run: dotnet publish -c Release --no-build -o publish src/Tayco.Web/Tayco.Web.csproj
       - uses: actions/upload-artifact@v1
         with:
           name: dist
