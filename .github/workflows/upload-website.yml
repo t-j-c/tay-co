@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-dotnet@v1.7.2
         with:
-          dotnet-version: '5.x'
+          dotnet-version: '5.0.x'
       - run: dotnet build -c Release
       - run: dotnet test -c Release --no-build
       - run: dotnet publish -c Release --no-build -o publish Tayco.sln
