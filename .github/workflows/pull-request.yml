@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@master
         with:
           ref: ${{ github.event.pull_request.head.sha }}
-      - uses: actions/setup-dotnet@v1
+      - uses: actions/setup-dotnet@v1.7.2
         with:
           dotnet-version: '5.*'
       - run: dotnet build -c Release
